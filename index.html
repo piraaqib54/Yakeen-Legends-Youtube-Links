@@ -4,69 +4,215 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>YAKEEN LEGENDS YOUTUBE LINK – Free NEET & JEE Resources</title>
-<meta name="description" content="YAKEEN LEGENDS YOUTUBE LINK – Free NEET & JEE notes, Yakeen Test Series, motivation blogs & study tools.">
-<meta name="keywords" content="NEET, JEE, Yakeen Legends, Pomodoro Technique, Atomic Habits, Study Motivation">
-<meta name="author" content="Pir Aaqib">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-<!-- AdSense (add your ID later) -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
-     crossorigin="anonymous"></script>
-
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-body{background:linear-gradient(135deg,#0f172a,#1e3a8a);color:#fff;}
-header{text-align:center;padding:20px;background:rgba(15,23,42,.8);backdrop-filter:blur(10px);}
-.banner{margin:20px;border-radius:20px;padding:40px 20px;background:#1e40af;text-align:center;}
-.section{background:#1e40af;color:#fff;border-radius:30px 30px 0 0;padding:30px 20px;margin-top:20px;}
-.container{max-width:1000px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;}
-.folder,.card,.blog{background:rgba(255,255,255,0.12);color:#fff;padding:15px;border-radius:12px;backdrop-filter: blur(6px);}
-.subfolder{display:block;margin:8px 0 0 15px;color:#93c5fd;text-decoration:none;}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
+color:#fff;
+}
+
+/* HEADER */
+header{
+text-align:center;
+padding:20px;
+background:rgba(15,23,42,.8);
+backdrop-filter:blur(10px);
+}
+
+/* ANIMATED HERO */
+.banner{
+margin:20px;
+border-radius:25px;
+padding:60px 20px;
+text-align:center;
+position:relative;
+overflow:hidden;
+background: linear-gradient(-45deg,#ff6b6b,#f06595,#845ef7,#339af0);
+background-size:400% 400%;
+animation: gradientMove 10s ease infinite;
+box-shadow:0 15px 40px rgba(0,0,0,0.4);
+}
+
+@keyframes gradientMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.banner::before{
+content:"";
+position:absolute;
+width:300px;
+height:300px;
+background:rgba(255,255,255,0.15);
+border-radius:50%;
+top:-80px;
+left:-80px;
+animation: floatGlow 6s ease-in-out infinite alternate;
+}
+
+@keyframes floatGlow{
+from{transform:translateY(0);}
+to{transform:translateY(40px);}
+}
+
+.banner h2{
+font-size:2rem;
+font-weight:700;
+animation: fadeSlide 1.5s ease forwards;
+}
+
+.banner p{
+margin-top:10px;
+opacity:0.9;
+animation: fadeSlide 2s ease forwards;
+}
+
+@keyframes fadeSlide{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+/* SECTION */
+.section{
+background:#1e40af;
+border-radius:30px 30px 0 0;
+padding:30px 20px;
+margin-top:20px;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+/* SEARCH */
+input{
+padding:10px 15px;
+border-radius:25px;
+border:none;
+font-size:1rem;
+outline:none;
+width:90%;
+max-width:400px;
+}
+
+/* PREMIUM FOLDERS */
+.folder{
+padding:22px;
+border-radius:18px;
+font-weight:700;
+font-size:1.3rem;
+transition:0.4s ease;
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
+cursor:pointer;
+}
+
+.folder:hover{
+transform:translateY(-8px) scale(1.03);
+box-shadow:0 15px 35px rgba(0,0,0,0.5);
+}
+
+.chemistry{background:linear-gradient(135deg,#ff7b00,#ff3d00);}
+.biology{background:linear-gradient(135deg,#00c853,#1b5e20);}
+.physics{background:linear-gradient(135deg,#2979ff,#0d47a1);}
+.testseries{background:linear-gradient(135deg,#aa00ff,#4a148c);}
+
+.subfolder{
+display:block;
+margin:10px 0 0 15px;
+color:#e0f2fe;
+text-decoration:none;
+font-size:0.95rem;
+}
+
 .subfolder:hover{text-decoration:underline;}
-.btn{display:inline-block;padding:10px 16px;background:#2563eb;color:#fff;border-radius:8px;text-decoration:none;margin:6px 0;cursor:pointer;}
-footer{text-align:center;padding:15px;background:rgba(15,23,42,.8);color:#fff;}
-footer a{color:#93c5fd;text-decoration:underline;margin:0 6px;}
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25d366;color:#fff;width:55px;height:55px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;}
+
+/* BLOGS */
+.blog{
+padding:20px;
+border-radius:18px;
+transition:0.4s ease;
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+.blog:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 35px rgba(0,0,0,0.5);
+}
+
+.blog1{background:linear-gradient(135deg,#ff9a9e,#ff6a88);}
+.blog2{background:linear-gradient(135deg,#a18cd1,#6a11cb);}
+.blog3{background:linear-gradient(135deg,#43cea2,#185a9d);}
+.blog4{background:linear-gradient(135deg,#f7971e,#ffd200); color:#222;}
+
+footer{
+text-align:center;
+padding:15px;
+background:rgba(15,23,42,.8);
+margin-top:20px;
+}
+
+.btn{
+display:inline-block;
+padding:10px 16px;
+background:#2563eb;
+color:#fff;
+border-radius:8px;
+text-decoration:none;
+margin-top:15px;
+}
 </style>
 </head>
 <body>
 
 <header>
-  <h1>YAKEEN LEGENDS YOUTUBE LINK</h1>
-  <p>Free NEET & JEE Resources | Test Series | Daily Motivation</p>
+<h1>YAKEEN LEGENDS YOUTUBE LINK</h1>
+<p>Free NEET & JEE Resources | Test Series | Daily Motivation</p>
 </header>
 
 <div class="banner">
-  <h2>🔥 Yakeen Legends – Your Daily Study Companion</h2>
-  <p>Banner image coming soon...</p>
-  <a href="https://t.me/+bfKoVn_hvaE5Mjg1" target="_blank" class="btn">🚀 Join Telegram</a>
+<h2>🔥 Yakeen Legends – Your Daily Study Companion</h2>
+<p>Free NEET & JEE Notes | Test Series | Motivation | Study Tools</p>
+<a href="https://t.me/+bfKoVn_hvaE5Mjg1" target="_blank" class="btn">🚀 Join Telegram</a>
 </div>
 
 <div class="section">
 <h2>📚 Study Folders</h2>
-<div class="container">
 
-<div class="folder">
+<div style="text-align:center;margin:15px 0;">
+<input type="text" id="folderSearch" placeholder="🔎 Search subjects or topics...">
+</div>
+
+<div class="container" id="folderContainer">
+
+<div class="folder chemistry">
 📂 Chemistry
-<a href="physical-chemistry.html" class="subfolder">📁 Physical Chemistry</a>
-<a href="organic-chemistry.html" class="subfolder">📁 Organic Chemistry</a>
-<a href="inorganic-chemistry.html" class="subfolder">📁 Inorganic Chemistry</a>
+<a href="#" class="subfolder">📁 Physical Chemistry</a>
+<a href="#" class="subfolder">📁 Organic Chemistry</a>
+<a href="#" class="subfolder">📁 Inorganic Chemistry</a>
 </div>
 
-<div class="folder">
+<div class="folder biology">
 📂 Biology
-<a href="zoology.html" class="subfolder">📁 Zoology</a>
-<a href="botany.html" class="subfolder">📁 Botany</a>
+<a href="#" class="subfolder">📁 Zoology</a>
+<a href="#" class="subfolder">📁 Botany</a>
 </div>
 
-<div class="folder">
-📂 <a href="physics.html" style="color:inherit;text-decoration:none;">Physics</a>
+<div class="folder physics">
+📂 Physics
 </div>
 
-<div class="folder">
+<div class="folder testseries">
 📂 Yakeen Test Series
-<a href="yakeen-tests.html" class="subfolder">📁 Yakeen Legends Tests</a>
+<a href="#" class="subfolder">📁 Yakeen Legends Tests</a>
 </div>
 
 </div>
@@ -74,99 +220,64 @@ footer a{color:#93c5fd;text-decoration:underline;margin:0 6px;}
 
 <div class="section">
 <h2>🧠 Daily Motivation</h2>
-<p id="quote" style="font-size:1.1rem;font-weight:600;"></p>
+<p id="quote" style="text-align:center;font-weight:600;"></p>
 </div>
 
 <div class="section">
 <h2>✍️ Study Blogs</h2>
 <div class="container">
 
-<div class="blog">
-<h3>Pomodoro Technique (How to Actually Use)</h3>
-<p>Work 25 minutes with full focus, then 5 minutes break. After 4 cycles, take a long 20–30 minute break. Keep phone away, use a timer, and track sessions daily.</p>
+<div class="blog blog1">
+<h3>Pomodoro Technique</h3>
+<p>Work 25 minutes with focus, then 5 minutes break. Repeat 4 cycles.</p>
 </div>
 
-<div class="blog">
-<h3>Atomic Habits – Real Tips</h3>
-<p>Start tiny (2-minute rule). Attach habits to routines. Make habits obvious, attractive, easy, and satisfying. Consistency beats motivation every time.</p>
+<div class="blog blog2">
+<h3>Atomic Habits</h3>
+<p>Start tiny. Make habits obvious, easy, and satisfying.</p>
 </div>
 
-<div class="blog">
-<h3>Control Your Subconscious Mind</h3>
-<p>Repeat positive self-talk daily. Visualize success before sleep. Replace “I can’t” with “I’m improving daily.” Your mind believes repetition.</p>
+<div class="blog blog3">
+<h3>Control Your Mind</h3>
+<p>Replace negative self-talk with positive repetition daily.</p>
 </div>
 
-<div class="blog">
-<h3>How to Stop Procrastination</h3>
-<p>Break tasks into tiny actions. Start even when you don’t feel like it. Remove distractions. Promise yourself just 5 minutes—action creates motivation.</p>
+<div class="blog blog4">
+<h3>Stop Procrastination</h3>
+<p>Start small. Action creates motivation.</p>
 </div>
 
 </div>
-</div>
-
-<div class="section" id="contact">
-<h2>Contact Us</h2>
-<p>Email: piraaqib36@gmail.com</p>
-<p>WhatsApp: +91 9596027454</p>
-</div>
-
-<div class="section" id="privacy">
-<h2>Privacy Policy</h2>
-<p>Your data is safe. We don’t sell user data. Visits and downloads are anonymous.</p>
 </div>
 
 <footer>
-© 2026 YAKEEN LEGENDS YOUTUBE LINK | Managed by Pir Aaqib |
-<a href="#contact">Contact</a> | <a href="#privacy">Privacy</a>
+© 2026 YAKEEN LEGENDS | Managed by Pir Aaqib
 </footer>
 
-<a class="whatsapp" href="https://t.me/+bfKoVn_hvaE5Mjg1" target="_blank">💬</a>
-
-<!-- PDF Preview Modal -->
-<div id="previewModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:9999;">
-  <div style="background:#fff;width:95%;max-width:900px;margin:5% auto;padding:10px;border-radius:12px;">
-    <iframe id="pdfFrame" src="" style="width:100%;height:70vh;border:none;"></iframe>
-    <div style="text-align:right;margin-top:10px;">
-      <a class="btn" onclick="closePreview()">Close</a>
-    </div>
-  </div>
-</div>
-
 <script>
-// 100-day loop quotes (you can add more later)
+/* DAILY QUOTES */
 const quotes=[
-"Discipline beats motivation.","Small steps daily create big change.","Your future depends on what you do today.",
-"Focus now, enjoy later.","Consistency is your superpower.","Study while others sleep.",
-"Don’t wait for motivation, build discipline.","Dreams demand daily effort.","Hard work compounds.",
-"Start even if you’re scared.","Progress over perfection.","One page a day still wins.",
-"Your habits decide your rank.","Be uncomfortable now to be comfortable later.",
-"Action kills fear.","You’re closer than you think.","Today’s effort is tomorrow’s confidence.",
-"Don’t scroll your future away.","Small wins matter.","No zero days."
+"Discipline beats motivation.",
+"Small steps daily create big change.",
+"Your future depends on what you do today.",
+"Consistency is your superpower.",
+"No zero days."
 ];
+
 let day=Math.floor((Date.now()/86400000)%quotes.length);
 document.getElementById("quote").innerText=quotes[day];
 
-// Telegram join lock
-function requireJoin(link){
-  if(!localStorage.getItem("joined")){
-    if(confirm("Join our Telegram to unlock downloads")){
-      window.open("https://t.me/+bfKoVn_hvaE5Mjg1","_blank");
-      localStorage.setItem("joined","1");
-    }
-    return false;
-  }
-  return true;
-}
+/* SEARCH FUNCTION */
+const searchInput=document.getElementById("folderSearch");
+const folders=document.querySelectorAll("#folderContainer .folder");
 
-// PDF Preview
-function previewPDF(src){
-  document.getElementById("previewModal").style.display="block";
-  document.getElementById("pdfFrame").src = src;
-}
-function closePreview(){
-  document.getElementById("previewModal").style.display="none";
-  document.getElementById("pdfFrame").src="";
-}
+searchInput.addEventListener("keyup",function(){
+let filter=searchInput.value.toLowerCase();
+folders.forEach(folder=>{
+let text=folder.innerText.toLowerCase();
+folder.style.display=text.includes(filter)?"block":"none";
+});
+});
 </script>
 
 </body>
