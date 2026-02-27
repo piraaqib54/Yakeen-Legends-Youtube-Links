@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>YAKEEN LEGENDS – Free NEET & JEE Resources</title>
+<title>YAKEEN LEGENDS – Premium NEET & JEE Platform</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -18,9 +18,9 @@ color:#fff;
 /* HEADER */
 header{
 text-align:center;
-padding:20px;
-background:rgba(15,23,42,.8);
-backdrop-filter:blur(10px);
+padding:25px;
+background:linear-gradient(135deg,#1e3a8a,#2563eb);
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
 }
 
 /* HERO */
@@ -29,8 +29,6 @@ margin:20px;
 border-radius:25px;
 padding:60px 20px;
 text-align:center;
-position:relative;
-overflow:hidden;
 background: linear-gradient(-45deg,#ff6b6b,#f06595,#845ef7,#339af0);
 background-size:400% 400%;
 animation: gradientMove 10s ease infinite;
@@ -47,199 +45,170 @@ box-shadow:0 15px 40px rgba(0,0,0,0.4);
 .section{
 background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
 border-radius:30px 30px 0 0;
-padding:30px 20px;
+padding:40px 20px;
 margin-top:20px;
 }
 
-.section h2{color:#ffdd57;}
-
-.container{
-max-width:1000px;
-margin:auto;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
+.section h2{
+text-align:center;
+margin-bottom:30px;
+color:#ffdd57;
 }
 
 /* SEARCH */
-input{
-padding:10px 15px;
+.search-box{
+text-align:center;
+margin-bottom:25px;
+}
+
+.search-box input{
+padding:12px 18px;
 border-radius:25px;
 border:none;
-font-size:1rem;
-outline:none;
 width:90%;
 max-width:400px;
+font-size:1rem;
 }
 
-/* FOLDERS */
-.folder{
-padding:22px;
-border-radius:18px;
-font-weight:700;
-font-size:1.3rem;
-transition:0.4s ease;
-box-shadow:0 8px 20px rgba(0,0,0,0.3);
-cursor:pointer;
+/* GRID */
+.container{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
 }
 
-.folder:hover{transform:translateY(-8px) scale(1.03);}
-
-.chemistry{background:linear-gradient(135deg,#ff7b00,#ff3d00);}
-.biology{background:linear-gradient(135deg,#00c853,#1b5e20);}
-.physics{background:linear-gradient(135deg,#2979ff,#0d47a1);}
-.testseries{background:linear-gradient(135deg,#aa00ff,#4a148c);}
-
-.subfolder{
-display:block;
-margin:10px 0 0 15px;
-color:#e0f2fe;
-text-decoration:none;
-font-size:0.95rem;
-}
-.subfolder:hover{text-decoration:underline;}
-
-a.folder{color:#fff;text-decoration:none;}
-
-/* BLOGS */
-.blog{
+/* CARD */
+.card{
+background:rgba(255,255,255,0.1);
+border:2px solid rgba(255,255,255,0.2);
+backdrop-filter:blur(10px);
 padding:20px;
-border-radius:18px;
-transition:0.4s ease;
-box-shadow:0 8px 20px rgba(0,0,0,0.3);
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,0.4);
+transition:0.4s;
+opacity:0;
+transform:translateY(40px);
+animation:fadeUp 0.8s ease forwards;
 }
 
-.blog:hover{transform:translateY(-6px);}
-
-.blog1{background:linear-gradient(135deg,#ff9a9e,#ff6a88);}
-.blog2{background:linear-gradient(135deg,#a18cd1,#6a11cb);}
-.blog3{background:linear-gradient(135deg,#43cea2,#185a9d);}
-.blog4{background:linear-gradient(135deg,#f7971e,#ffd200); color:#222;}
-
-footer{
-text-align:center;
-padding:15px;
-background:rgba(15,23,42,.8);
-margin-top:20px;
+.card:hover{
+transform:translateY(-8px);
 }
 
+@keyframes fadeUp{
+to{opacity:1;transform:translateY(0);}
+}
+
+/* BUTTON */
 .btn{
 display:inline-block;
-padding:10px 16px;
+padding:10px 18px;
 background:#2563eb;
 color:#fff;
 border-radius:8px;
 text-decoration:none;
-margin-top:15px;
+font-weight:600;
+transition:0.3s;
 }
 
-/* WhatsApp Floating Button */
-.whatsapp-btn{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-width:45px;
-height:45px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-box-shadow:0 10px 25px rgba(0,0,0,0.4);
-z-index:999;
+.btn:hover{
+background:#1d4ed8;
+transform:scale(1.05);
 }
 
-.whatsapp-btn img{width:24px;height:24px;}
+.card img{
+width:100%;
+border-radius:15px;
+margin-bottom:15px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:rgba(0,0,0,0.4);
+margin-top:30px;
+}
 </style>
 </head>
+
 <body>
 
 <header>
 <h1>YAKEEN LEGENDS</h1>
-<p>Free NEET & JEE Resources | Test Series | Daily Motivation</p>
+<p>Premium NEET & JEE Learning Platform</p>
 </header>
 
 <div class="banner">
-  <h2>🔥 Yakeen Legends – Your Daily Study Companion</h2>
-  <p>Free NEET & JEE Notes | Test Series | Motivation | Study Tools</p>
-  <a href="https://t.me/+bfKoVn_hvaE5Mjg1" target="_blank" class="btn">🚀 Join Telegram</a>
-  <p style="margin-top:12px; font-size:0.95rem; opacity:0.9;">
-    Managed by <strong>Pir Aaqib</strong>
-  </p>
+<h2>🔥 Your Daily Study Companion</h2>
+<p>Notes | Playlists | Test Series | Motivation</p>
 </div>
 
 <div class="section">
-<h2>📚 Study Folders</h2>
+<h2>📚 Study Playlists</h2>
 
-<div style="text-align:center;margin:15px 0;">
-<input type="text" placeholder="🔎 Search subjects or topics...">
+<div class="search-box">
+<input type="text" placeholder="🔎 Search subjects..." id="searchInput">
 </div>
 
-<div class="container">
+<div class="container" id="contentArea">
 
-  <!-- Chemistry (not clickable) -->
-  <div class="folder chemistry">
-    📂 Chemistry
-    <a href="physical-chemistry.html" class="subfolder">📁 Physical Chemistry</a>
-    <a href="organic-chemistry.html" class="subfolder">📁 Organic Chemistry</a>
-    <a href="inorganic-chemistry.html" class="subfolder">📁 Inorganic Chemistry</a>
-  </div>
+<!-- Mole Concept -->
+<div class="card">
+<h3>📘 Mole Concept – Physical Chemistry</h3>
 
-  <!-- Biology (not clickable) -->
-  <div class="folder biology">
-    📂 Biology
-    <a href="zoology.html" class="subfolder">📁 Zoology</a>
-    <a href="botany.html" class="subfolder">📁 Botany</a>
-  </div>
+<a href="https://youtube.com/YOUR_PLAYLIST_LINK" target="_blank">
+<img src="https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg">
+</a>
 
-  <!-- Physics (clickable) -->
-  <a href="physics.html" class="folder physics">📂 Physics</a>
+<a href="https://youtube.com/YOUR_PLAYLIST_LINK" target="_blank" class="btn">▶ Watch Playlist</a>
 
-  <!-- Test Series (clickable) -->
-  <a href="testseries.html" class="folder testseries">📂 Yakeen Test Series</a>
-
-</div>
+<br><br>
+<a href="notes/mole-concept.pdf" download class="btn">⬇ Download Notes</a>
 </div>
 
-<div class="section">
-<h2>🧠 Daily Motivation</h2>
-<p style="text-align:center;font-weight:600;">“Small steps daily create big results.”</p>
+<!-- Organic Chemistry -->
+<div class="card">
+<h3>🧪 GOC – Organic Chemistry</h3>
+
+<a href="https://youtube.com/YOUR_ORGANIC_LINK" target="_blank">
+<img src="https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg">
+</a>
+
+<a href="https://youtube.com/YOUR_ORGANIC_LINK" target="_blank" class="btn">▶ Watch Playlist</a>
 </div>
 
-<div class="section">
-<h2>✍️ Study Blogs</h2>
-<div class="container">
-  <div class="blog blog1"><h3>Pomodoro Technique</h3><p>Work 25 minutes with focus, then 5 minutes break.</p></div>
-  <div class="blog blog2"><h3>Atomic Habits</h3><p>Start tiny. Make habits obvious, easy, and satisfying.</p></div>
-  <div class="blog blog3"><h3>Control Your Mind</h3><p>Replace negative self-talk with positive repetition daily.</p></div>
-  <div class="blog blog4"><h3>Consistency Wins</h3><p>Discipline beats motivation every time.</p></div>
-</div>
+<!-- Physics -->
+<div class="card">
+<h3>⚛ Electrostatics – Physics</h3>
+
+<a href="https://youtube.com/YOUR_PHYSICS_LINK" target="_blank">
+<img src="https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg">
+</a>
+
+<a href="https://youtube.com/YOUR_PHYSICS_LINK" target="_blank" class="btn">▶ Watch Playlist</a>
 </div>
 
-<div class="section" id="contact">
-<h2>📞 Contact Us</h2>
-<p style="text-align:center;">Telegram: <a href="https://t.me/+bfKoVn_hvaE5Mjg1" target="_blank" style="color:#ffdd57;">Join Our Telegram</a></p>
-<p style="text-align:center;">WhatsApp: <a href="https://wa.me/919596027454" target="_blank" style="color:#ffdd57;">Chat on WhatsApp</a></p>
-<p style="text-align:center;">Email: <a href="mailto:piraaqib36@gmail.com" style="color:#ffdd57;">piraaqib36@gmail.com</a></p>
 </div>
-
-<div class="section" id="privacy">
-<h2>🔐 Privacy Policy</h2>
-<ul style="max-width:800px;margin:auto;line-height:1.8;">
-<li>We do not collect personal data.</li>
-<li>Third-party ads may use cookies.</li>
-<li>All content is for free education.</li>
-<li>Using this site means you agree to this policy.</li>
-</ul>
 </div>
 
 <footer>
-<p>© 2026 YAKEEN LEGENDS. All rights reserved.</p>
+© 2026 YAKEEN LEGENDS | All Rights Reserved
 </footer>
 
-<a href="https://wa.me/919596027454" target="_blank" class="whatsapp-btn">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-</a>
+<script>
+const searchInput = document.getElementById("searchInput");
+searchInput.addEventListener("keyup", function() {
+  let filter = searchInput.value.toLowerCase();
+  let cards = document.querySelectorAll(".card");
+
+  cards.forEach(card => {
+    let text = card.textContent.toLowerCase();
+    card.style.display = text.includes(filter) ? "block" : "none";
+  });
+});
+</script>
 
 </body>
 </html>
